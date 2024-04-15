@@ -3,9 +3,9 @@ jobs:
   build:
     docker:
       - image: golang:latest
-    working_directory: /go/src/github.com/raynnenogueira/aula-ci
-    steps: 
+    working_directory: github.com/raynnenogueira/aula-ci
+    steps:
       - checkout
       - run:
-        name: Run tests
-        command: go test -v
+          name: Run tests
+          command: go test -v
